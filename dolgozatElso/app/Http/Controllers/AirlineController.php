@@ -39,4 +39,9 @@ class AirlineController extends Controller
         $airlines = Airlines::all();
         return view('airline.list', ['airlines' => $airlines]);
     }
+
+    public function destroyView(){
+        $airlines = Airlines::all();
+        return view('airline.list', ['airlines' => $airlines]);
+    }
 }
