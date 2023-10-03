@@ -19,9 +19,9 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        Airlines::create(["name"=>"Malév","county"=>"Magyar"]);
-        Airlines::create(["name"=>"Lufthansa","county"=>"Német"]);
-        Airlines::create(["name"=>"Swit","county"=>"Svájci"]);
+        Airlines::create(["name"=>"Malév","country"=>"Magyar"]);
+        Airlines::create(["name"=>"Lufthansa","country"=>"Német"]);
+        Airlines::create(["name"=>"Swit","country"=>"Svájci"]);
     }
 
     /**

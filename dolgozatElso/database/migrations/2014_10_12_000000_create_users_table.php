@@ -22,9 +22,9 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        User::create(["name"=>"Aaaa","email"=>"valki@.com","pasword"=>"aa123"]);
-        User::create(["name"=>"Bbbb","email"=>"valki22@.com2","pasword"=>"bb123"]);
-        User::create(["name"=>"Cccc","email"=>"valki33@.com3","pasword"=>"cc123"]);
+        User::create(["name"=>"Aaaa","email"=>"valki@.com","password"=>"aa123"]);
+        User::create(["name"=>"Bbbb","email"=>"valki22@.com2","password"=>"bb123"]);
+        User::create(["name"=>"Cccc","email"=>"valki33@.com3","password"=>"cc123"]);
     }
 
     /**

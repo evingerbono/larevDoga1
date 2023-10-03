@@ -10,8 +10,8 @@ class Travel extends Model
     use HasFactory;
     protected  $primaryKey = 'travel_id';
     protected $fillable = [
-        'evalaution',
-        'filght_id',
+        'evaluation',
+        'flight_id',
         'user_id'
     ];
 }

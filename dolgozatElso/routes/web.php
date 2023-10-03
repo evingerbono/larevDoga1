@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AirlineController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/api/airline', [AirlineController::class, 'index']);
+Route::get('/api/airline/{airline_id}', [AirlineController::class, 'show']);
+Route::put('/api/airline/{airline_id}', [AirlineController::class, 'update']);
+Route::post('/api/airline', [AirlineController::class, 'store']);
+Route::delete('/api/airline/{airline_id}', [AirlineController::class, 'destroy']);
+
+Route::get('/airline/list', [AirlineController::class, 'listView']);
