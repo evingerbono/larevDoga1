@@ -20,8 +20,10 @@ Route::get('/', function () {
 
 Route::get('/api/airline', [AirlineController::class, 'index']);
 Route::get('/api/airline/{airline_id}', [AirlineController::class, 'show']);
-Route::put('/api/airline/{airline_id}', [AirlineController::class, 'update']);
-Route::post('/api/airline', [AirlineController::class, 'store']);
+Route::put('/api/airline/edit/{airline_id}', [AirlineController::class, 'update']);
+Route::post('/api/airline/new', [AirlineController::class, 'store']);
 Route::delete('/api/airline/{airline_id}', [AirlineController::class, 'destroy']);
 
+Route::get('/api/airline/delete/{airline_id}', [AirlineController::class, 'destroy']);
 Route::get('/airline/list', [AirlineController::class, 'listView']);
+Route::get('/api/airline/edit/{airline_id}', [AirlineController::class, 'update']);

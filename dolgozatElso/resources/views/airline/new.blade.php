@@ -1,6 +1,6 @@
-<form action="/api/airline" method="POST">
+<form action="/api/airline/new" method="POST">
     {{csrf_field()}}
-    {{method_field('PSOT')}}
+    {{method_field('PUT')}}
 
     <div class="form-group">
         <input type="text" name="name" placeholder="Name" value="{{ $airline->name }}">
